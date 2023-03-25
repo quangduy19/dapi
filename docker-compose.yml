@@ -4,7 +4,7 @@ services:
   dev:
     container_name: 'dapi_be'
     build:
-      context: ./backend2
+      context: .
       dockerfile: dev.Dockerfile
     ports:
       - 3000:3000
