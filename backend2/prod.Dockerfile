@@ -9,5 +9,7 @@ RUN yarn install
 COPY . .
  
 RUN yarn build
- 
+
+EXPOSE 443
+
 CMD [ "node", "dist/main.js" ]
