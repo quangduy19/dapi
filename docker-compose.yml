@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+  dev:
+    container_name: 'dapi_be'
+    build:
+      context: ./backend2
+      dockerfile: dev.Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./backend2:/usr/src/app
+      - /usr/src/app/node_modules
